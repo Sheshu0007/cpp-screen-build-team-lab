@@ -25,6 +25,7 @@ add_library(screen_modules
     src/screens/home_screen.cpp
     src/screens/profile_screen.cpp
     src/screens/settings_screen.cpp
+    src/screens/help_screen.cpp
 )
 target_include_directories(screen_modules PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
