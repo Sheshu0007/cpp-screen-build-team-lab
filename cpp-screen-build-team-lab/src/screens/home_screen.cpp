@@ -1,13 +1,13 @@
-#include "screens/home_screen.h"
+#include "screens/help_screen.h"
 
 namespace lab {
 
-std::string HomeScreen::name() const {
-    return "home";
+std::string HelpScreen::name() const {
+    return "help";
 }
 
-std::string HomeScreen::render() const {
-    return "Welcome to the Screen Lab";
+std::string HelpScreen::render() const {
+    return "Welcome to Help Screen";
 }
 
-} // namespace lab
+}
