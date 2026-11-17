@@ -18,10 +18,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y cmake g++
 
       - name: Configure project
-        run: cmake -S . -B build
+        run: cmake -S cpp-screen-build-team-lab -B cpp-screen-build-team-lab/build
 
       - name: Build project
-        run: cmake --build build --parallel
+        run: cmake --build cpp-screen-build-team-lab/build --parallel
 
       - name: Run tests
-        run: ctest --test-dir build --output-on-failure
+        run: ctest --test-dir cpp-screen-build-team-lab/build --output-on-failure
